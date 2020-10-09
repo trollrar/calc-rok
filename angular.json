@@ -122,8 +122,13 @@
               "devServerTarget": "kalkulator:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": { "baseHref": "/calc-rok/"}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "kalkulator"
 }
