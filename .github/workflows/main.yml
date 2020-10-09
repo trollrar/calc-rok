@@ -18,6 +18,10 @@ jobs:
           node-version: '12.x'
       - name: Install dependencies
         run: npm ci
+      - name: Set git email
+        run: git config --global user.email "workflow@github.com"
+      - name: Set git name
+        run: git config --global user.name "Workflow"
       - name: Deploy
         run: npm run deploy --name="Workflow" --email=workflow@github.com
         env:
