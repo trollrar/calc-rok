@@ -23,6 +23,6 @@ jobs:
       - name: Set git name
         run: git config --global user.name "Workflow"
       - name: Deploy
-        run: npm run deploy --name="Workflow" --email=workflow@github.com
+        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
